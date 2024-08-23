@@ -1,0 +1,90 @@
+<!--ToDo: Create a new website using HTML and Bootstrap. The website must include the following: -->
+<!--* At least 2 pages. -->
+<!-- A Bootstrap navbar, table, and form. -->
+<!--* Bootstrap grid used throughout to format elements -->
+<!--* Elements should stack vertically when the window is small -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-primary">
+    <!-- NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold text-success" href="destinations.html">PHX LUXURY RIDES</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="destinations.html">Destinations</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Why search? You are here already." aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Wrong</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<br><br><br><br><br><br>
+<!--Table-->
+<table class="table table-hover table-dark">
+    <thead>
+      <tr>
+        <th scope="col" class="text-primary" >Pick up</th>
+        <th scope="col" class="text-success" >Drop Off</th>
+        <th scope="col" class="text-warning" >Miles</th>
+        <th scope="col" class="text-danger" >Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        
+        <td class="text-success" >Phoenix Sky Harbor Airport</td>
+        <td class="text-danger">Sedona, AZ</td>
+        <td>116</td>
+        <td class="fw-bold">$150</td>
+      </tr>
+      <tr>
+        <td class="text-success" >Phoenix Sky Harbor Airport</td>
+        <td class="text-danger">Las Vegas, NV</td>
+        <td>300</td>
+        <td class="fw-bold">$400</td>
+      </tr>
+      <tr>
+        <td class="text-success">Phoenix Sky Harbor Airport</td>
+        <td class="text-danger">Los Angeles, CA</td>
+        <td>372</td>
+        <td class="fw-bold">$450</td>
+      </tr>
+      <tr>
+        <td class="text-success">Phoenix Sky Harbor Airport</td>
+        <td class="text-danger">Tucson, AZ</td>
+        <td>113</td>
+        <td class="fw-bold">$150</td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+  <h3 class="text-center">*All rides are a flat rate</h3>
+  
+  <h3 class="text-center text-danger">*Gratuities Appreciated</h3>
+  
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="node_modules/@popperjs/core/dist/cjs/popper.js"></script>
+</body>
+</html>
