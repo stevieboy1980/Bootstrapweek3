@@ -4,116 +4,188 @@
 <!--* Bootstrap grid used throughout to format elements -->
 <!--* Elements should stack vertically when the window is small -->
 
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Steve Young">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Steve Young" />
     <title>My Bootstrap Project</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-    
-</head>
-<body style="background-color: aqua;">
+  <body style="background-image: url(images/Logo1.png)">
+   
+    <!-- NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand text-success fw-bold" href="home.html"
+          >PHX LUXURY RIDEZ</a
+        >
 
-<!-- NAVBAR-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="container-fluid">
-      <a class="navbar-brand text-success fw-bold" href="home.html">PHX LUXURY RIDEZ</a> 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destinations.html">Destinations</a>
+            </li>
+          </ul>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="destinations.html">Destinations</a>
-          </li>
-          
-          
-        </ul>
-
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="What the fuck you searching for?" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Nope</button>
-        </form>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="What are you searching for?"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">Nope</button>
+          </form>
+        </div>
       </div>
-
-    </div>
-
-</nav>
+    </nav>
 
     <!-- Hero -->
-      <div><img class="img-fluid"style="width: 100%" src="images/1.png" alt="PHX RIDEZ"></div>
-      
-    
+    <div>
+      <img
+        class="img-fluid"
+        style="width: 100%"
+        src="images/1.png"
+        alt="PHX RIDEZ"
+      />
+    </div>
 
     <!-- Welcome -->
-<h1 class="text-center fw-bold text-danger">Experience luxury and comfort as you ride in style to your favorite destination.</h1>
-<ul class="text-center list-unstyled">
-  <li class="fw-bold">
-    Complimentary beverages
-  </li>
-  <li class="fw-bold">
-    Complimentary snacks
-  </li>
-  <li class="fw-bold">Free Wi-Fi</li>
-  <li class="fw-bold">Ability to adjust temperature to your preference</li>
-  <li class="fw-bold">Chargers available</li>
-  <li class="fw-bold">Satellite Radio</li>
-</ul>
+    <h1 class="text-center fw-bold text-danger">
+      Experience luxury and comfort as you ride in style to your favorite
+      destination.
+    </h1>
+    <ul class="list-group list-group-flush text-center fw-bold">
+      <li class="list-group-item list-group-item-primary">Complimentary beverages</li>
+      <li class="list-group-item list-group-item-primary">Complimentary snacks</li>
+      <li class="list-group-item list-group-item-primary">Free Wi-Fi</li>
+      <li class="list-group-item list-group-item-primary">Ability to adjust temperature to your preference</li>
+      <li class="list-group-item list-group-item-primary">Chargers available</li>
+      <li class="list-group-item list-group-item-primary">Satellite radio</li>
+    </ul>
     <!-- Cards -->
     <div class="container-fluid text-center">
       <div class="row g-3 m-3 pt-5">
         <div class="col-sm">
           <div class="card h-100">
-            <img src="images/black-suv-with-word-luxury-front_1277670-5845.jpg" class="card-img-top" alt="Luxury">
+            <img
+              src="images/black-suv-with-word-luxury-front_1277670-5845.jpg"
+              class="card-img-top"
+              alt="Luxury"
+            />
             <div class="card-body">
               <h5 class="card-title">Luxury SUV's</h5>
-              <p class="card-text">Luxury meet elegance. Our vehicles are fully equipped to meet all of your needs.</p>
-              <a href="destinations.html" class="btn btn-success">Go somewhere</a>
+              <p class="card-text">
+                Luxury meet elegance. Our vehicles are fully equipped to meet
+                all of your needs.
+              </p>
+              <a href="destinations.html" class="btn btn-success"
+                >Go somewhere</a
+              >
             </div>
           </div>
         </div>
         <div class="col-sm">
           <div class="card h-100">
-            <img src="images/comfort.jpg" class="card-img-top" alt="Comfort and Style">
+            <img
+              src="images/comfort.jpg"
+              class="card-img-top"
+              alt="Comfort and Style"
+            />
             <div class="card-body">
-              <h5 class="card-title">Luxurious<br>Comfort</h5>
-              <p class="card-text">Luxury like you've never experienxed before. Our SUV's come fully equipped with state of the art electronics, Rich, Corinthian leather reclining seats, and a fully stocked mini-fridge with complimentary snacks and beverages.</p>
-              <a href="destinations.html" class="btn btn-success">Go somewhere</a>
+              <h5 class="card-title">Luxurious<br />Comfort</h5>
+              <p class="card-text">
+                Luxury like you've never experienxed before. Our SUV's come
+                fully equipped with state of the art electronics, Rich,
+                Corinthian leather reclining seats, and a fully stocked
+                mini-fridge with complimentary snacks and beverages.
+              </p>
+              <a href="destinations.html" class="btn btn-success"
+                >Go somewhere</a
+              >
             </div>
           </div>
         </div>
         <div class="col-sm">
           <div class="card h-100">
-            <img src="images/chauffer.jpg" class="card-img-top" alt="Chauffer">
+            <img
+              src="images/chauffer.jpg"
+              class="card-img-top"
+              alt="Chauffer"
+            />
             <div class="card-body">
               <h5 class="card-title">We aim to please</h5>
-              <p class="card-text">If for any reason, we failed to meet your luxurious expectations, your next ride is on us!</p>
-              <a href="destinations.html" class="btn btn-success">Go somewhere</a>
+              <p class="card-text">
+                If for any reason, we failed to meet your luxurious
+                expectations, your next ride is on us!
+              </p>
+              <a href="destinations.html" class="btn btn-success"
+                >Go somewhere</a
+              >
             </div>
           </div>
         </div>
       </div>
     </div>
     <!--Picture Div-->
-    <!--Img View All Locations-->
-    <!-- Contact Form -->
+    <div class="container mt-5 mb-5 pt-5 pb-5 text-center">
+      <div class="row gx-0 g-0">
+        <div class="col-sm-12 pb-3 text-primary">
+          <h2><mark>Book a luxury ride with us today!</mark></h2>
+        </div>
+        <div class="col-sm-8">
+          <img class="img-fluid" src="images/fleet.jpg" alt="fleet" />
+        </div>
+        <div class="col-sm-4">
+          <img class="img-fluid" src="images/group.jpg" alt="group" />
+        </div>
+      </div>
+      <div class="row gx-0 g-0">
+        <div class="col-sm-4">
+          <img class="img-fluid" src="images/luxury suv.jpg" alt="luxury" />
+        </div>
+        <div class="col-sm-8">
+          <img
+            class="img-fluid"
+            src="images/personal driver.jpg"
+            alt="personal driver"
+          />
+        </div>
+      </div>
+    </div>
+
+    
     <!--Footer -->
-    
+    <footer class="pt-5 pb-5">
+    <div class=" text-center text-light pb-5">
+      <h5>PHX Luxury Ridez 2024</h5>
+    </div>
+  </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    
-</body>
+  </body>
 </html>

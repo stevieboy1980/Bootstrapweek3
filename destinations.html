@@ -14,7 +14,8 @@
 
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-primary">
+<body class="bg-info">
+
     <!-- NAVBAR-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -38,6 +39,8 @@
           </div>
         </div>
       </nav>
+
+      <h1 class="text-center text-success mt-5">Sit back, relax, and enjoy the ride</h1>
 <br><br><br><br><br><br>
 <!--Table-->
 <table class="table table-hover table-dark">
@@ -71,6 +74,11 @@
       </tr>
       <tr>
         <td class="text-success">Phoenix Sky Harbor Airport</td>
+        <td class="text-danger">Flagstaff, AZ</td>
+        <td>148</td>
+        <td class="fw-bold">$200</td>
+        <tr>
+        <td class="text-success">Phoenix Sky Harbor Airport</td>
         <td class="text-danger">Tucson, AZ</td>
         <td>113</td>
         <td class="fw-bold">$150</td>
@@ -82,7 +90,72 @@
   <h3 class="text-center">*All rides are a flat rate</h3>
   
   <h3 class="text-center text-danger">*Gratuities Appreciated</h3>
+
+  <!--Contact Form-->
+
+  <h1 class="text-center mb-2 pt-5">Book your luxury ride today!</h1>
+
+  <div class="container">
+<form class="row g-3 mb-5 ms-3 me-3 pt-5">
+
+  <div class="col-md-6">
+    <label for="firstname" class="form-label fw-bold">First name</label>
+      <input type="text" class="form-control" aria-label="First name" id="firstname">
+  </div>
+    <div class="col-md-6">
+        <label for="lastname" class="form-label fw-bold">Last name</label>
+      <input type="text" class="form-control" aria-label="Last name" id="lastname">
+    </div>
   
+
+    <div class="col-md-12">
+      <label for="inputEmail4" class="form-label fw-bold">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    
+    <div class="col-12">
+      <label for="inputAddress" class="form-label fw-bold">Address (we come to you)</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" class="form-label fw-bold">Address 2</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label fw-bold">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label fw-bold">State</label>
+      <select id="inputState" class="form-select">
+        <option selected>Choose...</option>
+        <option>Arizona</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label fw-bold">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+
+    <div class="col-md-4">
+        <label for="inputState" class="form-label fw-bold">Choose destination</label>
+        <select id="inputState" class="form-select">
+          <option selected>Choose...</option>
+          <option value="Sedona">Sedona,AZ
+          </option>
+          <option value="Las Vegas">Las Vegas,NV</option>
+          <option value="Los Angeles">Los Angeles,CA</option>
+          <option value="Flagstaff">Flagstaff,AZ</option>
+          <option value="Tucson">Tucson,AZ</option>
+        </select>
+      </div>
+   
+    
+    <div class="col-12">
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </div>
+</form>
+  </div>
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 <script src="node_modules/@popperjs/core/dist/cjs/popper.js"></script>
